@@ -62,14 +62,14 @@ body{
     flex-direction: column;
     align-content: center;
     align-items: center;
-    width: 500px;
+    width: 100%;
     color: #E3D081;
 } .drawbox{
     display: flex;
     flex-direction: column;
     align-content: center;
     align-items: center;
-    width: 500px;
+    width: 100%;
     color: #E3D081;
 }
 .hide{
