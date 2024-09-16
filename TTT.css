@@ -1,0 +1,87 @@
+.mainbox{
+display: grid;
+height: 330px;
+width: 330px;
+gap : 10px;
+grid-template-columns: 100px 100px 100px;
+grid-template-rows: 100px 100px 100px;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: #91C7B1;
+    border:none;
+    border-radius: 5px;
+    color: #E3D081;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.5);
+}
+.box:disabled{
+    background-color: #588d78;
+}
+h1{
+    font-family: Garamond, serif;
+    color: #E3D081;
+    text-align: center;
+}
+body{
+    background-color: #B33951;
+    display : flex;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: center;
+}
+#reset{
+    margin-top: 30px ;
+    height: 60px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: #E3D081;
+    color: #54494B;
+    border:none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: Garamond, serif;
+}
+.newgame{
+    height: 60px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: #E3D081;
+    border:none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: Garamond, serif;
+    margin-bottom: 30px; 
+    color: #54494B;   
+}
+.winmsg{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    width: 500px;
+    color: #E3D081;
+}
+.hide{
+    display: none;;
+}
+@keyframes animate {
+    from{
+        color: #E3D081;
+    }
+    to{
+        color: #91C7B1;
+    }
+}
+#displayWinner{
+font-family: Garamond, serif;
+font-size: 50px;
+font-weight: bold;
+animation-name: animate;
+animation-duration: 1s;
+animation-iteration-count: infinite;
+animation-timing-function: ease-in;
+}
