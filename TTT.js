@@ -41,6 +41,7 @@ function areAllBoxesChecked(boxes){
         console.log("draw");
         drawbox.classList.remove("hide");
         drawmsg.innerText="THIS IS A DRAW!";
+        reset.classList.add("hide");
         flag = false;
     }
 }
@@ -62,6 +63,7 @@ function declareWinner(winner){
     boxes.forEach((box)=>{
         box.disabled=true;
     })
+    reset.classList.add("hide");
 }
 
 reset.addEventListener("click",function(){
@@ -87,6 +89,7 @@ newgame[0].addEventListener("click",function(){
     drawmsg.innerText="";
     drawbox.classList.add("hide");
     isWinnerFound=false;
+    reset.classList.remove("hide");
     pX=true;
     count=0;
 })
@@ -100,6 +103,7 @@ newgame[1].addEventListener("click",function(){
     drawmsg.innerText="";
     drawbox.classList.add("hide");
     isWinnerFound=false;
+    reset.classList.remove("hide");
     pX=true;
     count=0;
 })
